@@ -1,0 +1,108 @@
+#slot1 { background-image: url(bg\ Imperium.avif);
+    background-size: cover;
+     padding-bottom: 250px;}
+#slot2 { background-image: url(bg\ orks.jpg);
+    background-size: cover; 
+    padding-bottom: 250px;}
+#slot3 { background-image: url(bg\ necrons.jpg);
+    background-size: cover; 
+    padding-bottom: 250px;}
+#slot4 { background-image: url(bg\ eldar.jpg);
+    background-size: cover; 
+    padding-bottom: 250px;}
+#slot5 { background-image: url(bg\ tau.jpg);
+    background-size: cover; 
+    padding-bottom: 250px;}
+#slot6 { background-image: url(bg\ tyr.jpg);
+    background-size: cover; 
+    padding-bottom: 250px;}
+#slot7 { background-image: url(bg\ chaos.jpeg);
+    background-size: cover;
+padding-bottom: 250px;}
+.slots {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.slot {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    font-size: 18px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.slot:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+img{
+    width: 70px;
+        display: inline-block;
+      padding: 0px;
+        margin: 0px;
+    
+    }
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+   
+    font-size: 38px;
+}
+.navbar a:hover{
+    background-color: hsl(0, 0%, 10%);
+}
+.navbar li{
+    float: left;
+    margin-left: 15px;
+}
+
+.Description{
+font-size: 30px;
+width: 700px;
+margin-top: 200px;
+margin-left: 100px;
+display: inline-block;
+background-color: hsl(0, 0%, 25%);
+color: white;
+
+padding: 20px;
+
+}
+
+.head{
+  font-size: 40px;
+    margin-left: 100px;
+    display: block;
+    color: white; 
+    background-color: hsl(0, 0%, 25%);
+    width: 180px;
+   
+   
+}
+
+.pic{
+ 
+   display: inline-block;
+ 
+}

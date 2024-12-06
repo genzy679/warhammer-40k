@@ -1,0 +1,62 @@
+
+
+.video{
+padding: 0px;
+    margin-left: 60px;
+}
+body{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+   background-size: cover;
+}
+
+h1{
+margin: 0px;
+    font-size: 50px;
+    padding: 0px;
+    color: white;
+    margin-top: 40px;
+    background-color: hsl(0, 0%, 25%);
+    display: inline-block;
+  margin-left: 600px;
+}
+.text{
+background-color: hsl(0, 0%, 25%);
+display: inline-block;
+font-size: 20px;
+color: white;
+margin-top: 100px;
+margin-left: 100px;
+width: 705px;
+padding: 10px;
+}
+
+img{
+    width: 70px;
+        display: inline-block;
+      padding: 0px;
+        margin: 0px;
+    
+    }
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+   
+    font-size: 38px;
+}
+.navbar a:hover{
+    background-color: hsl(0, 0%, 10%);
+}
+.navbar li{
+    float: left;
+    margin-left: 15px;
+}

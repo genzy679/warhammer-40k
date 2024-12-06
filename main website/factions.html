@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factions</title>
+    <link rel="stylesheet" href="style faction.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="My website.html"><img src="logo.jpg" ></a></li>
+    
+    <li><a href="about.html">About</a></li>
+    <li><a href="factions.html">factions</a></li>
+   
+    </ul>
+    
+  
+    <h1 align="Center">FACTIONS</h1>
+    
+        
+    <div class="slots">
+        <div class="slot" style="background-image: url('imperium.jpg');" data-slot="slot1">Imperium</div>
+        <div class="slot" style="background-image: url('download.jpg');" data-slot="slot2">Orks</div>
+        <div class="slot" style="background-image: url('necron.jpg');" data-slot="slot3">Necrons</div>
+        <div class="slot" style="background-image: url('eldar.jpg');" data-slot="slot4">Eldar</div>
+        <div class="slot" style="background-image: url('tau.jpg');" data-slot="slot5">Tau</div>
+        <div class="slot" style="background-image: url('nids.png');" data-slot="slot6">Tyranids</div>
+        <div class="slot" style="background-image: url('chaos.jpg');" data-slot="slot7">Chaos</div>
+    </div>
+
+    <div id="slot1" class="content">
+        <h2 class="head">Imperium</h2>
+        <p class="Description">The Imperium of Man is a vast, theocratic empire ruled by the God-Emperor of Mankind. It spans much of the galaxy, united under the banner of humanity’s survival against countless enemies, including alien races, Chaos, and heresy. It is a brutal and oppressive regime. The Imperium was founded after the Age of Strife when the Emperor, a powerful and enigmatic figure, united humanity under his rule. The Emperor led the Great Crusade to expand humanity’s reach across the galaxy. After his eventual near-death, the Imperium became a religious and militaristic society, with the Emperor worshipped as a god, keeping the galaxy in a perpetual state of war.</p>
+    <img src="imperium 1.jpg" class="pic" >
+    </div>
+
+    <div id="slot2" class="content">
+        <h2 class="head">Orks</h2>
+        <p class="Description">Orks are a brutal, violent, and highly adaptable species that thrive through conflict. Their technology, while seemingly crude, is powered by their inherent psychic power. Orks enjoy fighting and often seek out battles for fun, though they are also capable of organizing massive wars. Orks were created by the ancient Old Ones as a tool for war. They were genetically engineered to be a living weapon, capable of surviving on many worlds. Over time, Orks developed into a wild and anarchic species, led by the largest and most powerful among them (the Warbosses).</p>
+    </div>
+
+    <div id="slot3" class="content">
+        <h2 class="head">Necrons</h2>
+        <p class="Description">The Necrons are an ancient race of soulless, mechanical beings that were once a biological species but sacrificed their flesh for immortality. They are cold, calculating, and relentless, seeking to reclaim the galaxy from other races. The Necrons were once a species known as the Necrontyr who lived under harsh conditions. In desperation, they made a pact with the star gods, the C'tan, to exchange their bodies for immortality, becoming the Necrons.
+             After the C'tan betrayed them, the Necrons slumbered for millions of years before awakening to reclaim their lost empire.</p>
+    </div>
+
+    <div id="slot4" class="content">
+        <h2 class="head">Eldar</h2>
+        <p class="Description">The Eldar are an ancient, highly advanced, and tragic race of psychic beings. Once the dominant species in the galaxy, they are now fragmented into various factions, each seeking survival after their empire collapsed in a cataclysmic event known as the Fall of the Eldar. The Eldar were once a powerful and flourishing empire, known for their mastery of psychic powers and advanced technology. However, their excesses led to the creation of Slaanesh, the Chaos God of excess, which caused the collapse of their empire and the birth of the Eye of Terror. The survivors now live in various forms, including those in the Craftworlds, Dark Eldar, and Exodites.</p>
+    </div>
+
+    <div id="slot5"  class="content">
+        <h2 class="head">Tau</h2>
+        <p class="Description">The Tau are a young, technologically advanced alien race with a strong sense of unity and collective welfare under the philosophy of the "Greater Good." They are highly organized and rely heavily on advanced technology, especially ranged warfare, using battlesuits 
+            and long-range weapons. The Tau originated from the planet T'au in the Eastern Fringe of the galaxy. Initially 
+            a primitive species, the Tau experienced rapid technological development after uniting their tribes under the leadership of the Ethereal caste. They now seek to expand their empire by assimilating other species into their collective, though they maintain a policy of "peaceful" conquest through diplomacy or force.</p>
+    </div>
+
+    <div id="slot6" class="content" >
+        <h2 class="head">Tyranids</h2>
+        <p class="Description">Tyranids are a highly intelligent, hive-minded alien species that travels through space in vast swarms, consuming all biological matter on the planets they invade. They are completely driven by the need to feed and evolve, adapting to whatever threats they encounter. The Tyranids originate from beyond the galaxy, in the Great Rift. Their hive fleets entered the galaxy millennia ago, attacking and consuming all organic life. They are a ravenous, unstoppable force of nature, and their origin is mysterious, though some believe they are an ancient species of extreme bio-engineering.</p>
+    </div>
+
+    <div id="slot7" class="content" >
+        <h2 class="head">Chaos</h2>
+        <p class="Description">Chaos is the embodiment of the warp;s influence, consisting of the Chaos Gods and their mortal followers. It represents an ever-present force of corruption, mutation, and destruction in the galaxy. The four main Chaos Gods—Khorne, Tzeentch, Nurgle, and Slaanesh each represent different aspects of chaos, such as war, change, disease, and excess respectively. Chaos originated in the Warp, a dimension of pure psychic energy, where powerful entities known as the Chaos Gods arose from the emotions and desires of mortals. These gods and their followers constantly seek to corrupt, destroy, or warp the material universe. Chaos's influence has spread across the galaxy, especially among the traitorous forces of the Chaos Space Marines and mortal cultists.</p>
+    </div>
+
+    <script>
+     
+        const slots = document.querySelectorAll('.slot');
+        const contents = document.querySelectorAll('.content');
+
+        slots.forEach(slot => {
+            slot.addEventListener('click', () => {
+              
+                contents.forEach(content => content.style.display = 'none');
+
+                
+                const slotId = slot.dataset.slot;
+                document.getElementById(slotId).style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
